@@ -41,14 +41,15 @@ hr {
     color: red;
 }
 
-/* .restart {
+.restart {
     width: 100px;
     background-color: rgb(98, 197, 192);
     border: 1px solid green;
     margin: 0 auto;
     padding: 20px 0;
-} */
+}
 
-/* #restart:hover {
+#restart:hover {
     background-color: #fff;
-} */
+    cursor: pointer;
+}

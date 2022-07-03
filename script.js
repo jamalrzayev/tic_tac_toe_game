@@ -109,10 +109,18 @@ function checkWinner() {
     }
 }
 
-// function restart() {
-//     let restartButton = document.getElementById("restart");
+function restart() {
+    let restartButton = document.getElementById("restart");
 
-//     restartButton.addEventListener("click", setTile);
-// }
+    restartButton.addEventListener("click", function(){
+        document.querySelector('#board').innerHTML="";
+        document.querySelectorAll('#board .tile').forEach(el=>{
+            el.innerHTML="";
+        });
+        setGame();
+        setTile();
+        // console.log('Hey');
+    });
+}
 
-// restart();
+restart();
